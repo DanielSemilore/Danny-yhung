@@ -1,65 +1,93 @@
 <!DOCTYPE html>
-<html lang="en"  class="box-border size-32 border-4 p-4...">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danny picture</title>
+    <title>Danny Picture</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body class="m-0 font-[sans-serif] bg-black">
-    <header class="bg-blue-700 h-[70px] w-[100%] flex flex-row flex-wrap uppercase">
-       <a rel="noopener" href="https://github.com/DanielSemilore" target="_blank" class=""> 
-        <img src="./Images/45786904_9159813.svg" alt="logo" class="rounded-[4px] h-[50px] w-[50px] bg-blue-700 mt-[10px] ml-[10px] mr-[460px]">
-       </a> 
-       <h1 class="font-bold text-[50px] mr-[165px]">SOME OF MY PICTURE</h1>
-       <nav class="font-bold text-[25px] pt-[35px]">
-        <a href="./Danny yhung.html" target="_blank" class="mr-[50px] hover:text-black hover:bg-gradient-to-r from-red-500 via-blue-500 via-black to-white h-[20px] w-[50px]">About</a>
-        <a href="#Images/IMG-20250503-WA0000.jpg" class="mr-[50px] hover:text-black hover:bg-gradient-to-r from-red-500 via-blue-500 via-black to-white h-[20px] w-[50px]">Pictures</a>
-        <a href="./Videos.html" target="_blank" class="hover:text-black hover:bg-gradient-to-r from-red-500 via-blue-500 via-black to-white h-[20px] w-[50px]">Videos</a>
-       </nav>        
+<body class="min-h-screen flex flex-col bg-black font-[sans-serif] text-white">
+    <!-- Header -->
+    <header class="bg-blue-700 w-full flex flex-col items-center px-4 pt-2 pb-4 uppercase rounded-b-lg shadow-lg mb-4">
+        <div class="w-full flex flex-row items-center justify-between md:justify-start">
+            <a rel="noopener" href="https://github.com/DanielSemilore" target="_blank" class="flex-shrink-0">
+                <img src="./Images/45786904_9159813.svg"
+                     alt="Danny Yhung Logo"
+                     class="rounded h-[40px] w-[40px] md:h-[50px] md:w-[50px] bg-blue-700 ml-0 md:ml-2 mr-2 md:mr-10 transition-all duration-200">
+            </a>
+            <h1 class="flex-1 text-center font-bold text-[28px] md:text-[50px] mb-0">Some of My Pictures</h1>
+            <div class="w-[40px] md:hidden"></div>
+        </div>
+        <nav class="w-full flex flex-row justify-center items-center gap-2 md:gap-4 mt-4 font-bold text-[18px] md:text-[25px]">
+            <a href="./Danny yhung.html" class="text-center hover:text-black hover:bg-gradient-to-r from-red-500 via-blue-500 via-black to-white px-3 py-1 rounded transition">About</a>
+            <a href="#gallery" class="text-center hover:text-black hover:bg-gradient-to-r from-red-500 via-blue-500 via-black to-white px-3 py-1 rounded transition">Pictures</a>
+            <a href="./Videos.html" class="text-center hover:text-black hover:bg-gradient-to-r from-red-500 via-blue-500 via-black to-white px-3 py-1 rounded transition">Videos</a>
+        </nav>
     </header>
-    <main>
-        <div>
-            <img src="./Images/IMG-20250503-WA0000.jpg" alt="picture 1">
-            <img src="./Images/IMG-20250503-WA0004.jpg" alt="picture 2">
-            <img src="./Images/IMG-20250503-WA0005.jpg" alt="picture 3">
-            <img src="./Images/IMG-20250503-WA0006.jpg" alt="picture 4">
-            <img src="./Images/IMG-20250503-WA0007.jpg" alt="picture 5">
-            <img src="./Images/IMG-20250503-WA0008.jpg" alt="picture 6">
-            <img src="./Images/IMG-20250503-WA0010.jpg" alt="picture 7">
-            <img src="./Images/IMG-20250503-WA0011.jpg" alt="picture 8">
-            <img src="./Images/IMG-20250503-WA0012.jpg" alt="picture 9">
-            <img src="./Images/IMG-20250503-WA0013.jpg" alt="picture 10">
-            <img src="./Images/IMG-20250503-WA0014.jpg" alt="picture 11">
-            <img src="./Images/IMG-20250503-WA0015.jpg" alt="picture 12">
-            <img src="./Images/IMG-20250503-WA0016.jpg" alt="picture 13">
-            <img src="./Images/IMG-20250503-WA0018.jpg" alt="picture 14">
-            <img src="./Images/IMG-20250503-WA0019.jpg" alt="picture 15">        
+
+    <!-- Main Content -->
+    <main id="gallery" class="flex-1 flex flex-col items-center">
+        <div class="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-2 pb-8">
+            <img src="./Images/IMG-20250503-WA0000.jpg" alt="Danny picture 1" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0004.jpg" alt="Danny picture 2" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0005.jpg" alt="Danny picture 3" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0006.jpg" alt="Danny picture 4" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0007.jpg" alt="Danny picture 5" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0008.jpg" alt="Danny picture 6" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0010.jpg" alt="Danny picture 7" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0011.jpg" alt="Danny picture 8" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0012.jpg" alt="Danny picture 9" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0013.jpg" alt="Danny picture 10" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0014.jpg" alt="Danny picture 11" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0015.jpg" alt="Danny picture 12" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0016.jpg" alt="Danny picture 13" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0018.jpg" alt="Danny picture 14" class="w-full h-auto rounded shadow" />
+            <img src="./Images/IMG-20250503-WA0019.jpg" alt="Danny picture 15" class="w-full h-auto rounded shadow" />
         </div>
     </main>
-    <footer class="bg-blue-700 h-[75px] w-[100%] relative">
-        <p class="font-bold">Follow me on:</p>
-        <div class="flex flex-row flex-wrap font-bold">
-           <h2 class=" mr-[240px] ml-[90px]"><i class="fab fa-whatsapp-square mr-[5px] color-white bg-green-600 rounded-10"></i>Whatsapp:</h2>
-           <h2 class="mr-[240px]"><i class="fab fa-facebook-square mr-[5px] color-white bg-blue-800 rounded-20"></i>Facebook:</h2>
-           <h2 class="mr-[275px]"><i class="fab fa-titok-square mr-[5px] color-white bg-black rounded-30"></i>Tiktok:</h2>
-           <h2 class=""><i class="fab fa-instagram-square mr-[5px] color-white bg- rounded-40"></i>Instagram:</h2>            
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 w-full py-6 mt-auto">
+        <p class="font-bold mb-4 text-center">Follow me on:</p>
+        <div class="flex flex-col md:flex-row md:items-center md:justify-center md:gap-8 font-bold text-center">
+            <!-- WhatsApp -->
+            <div class="flex flex-col md:flex-row md:items-center md:gap-2 mb-2 md:mb-0">
+                <h2 class="flex items-center justify-center mb-1 md:mb-0">
+                    <i class="fab fa-whatsapp-square mr-2 text-green-500"></i>Whatsapp:
+                </h2>
+                <a href="https://Wa.link/8p6l05" class="hover:bg-green-500 hover:text-black px-2 py-1 rounded transition md:ml-2">
+                    08074931478
+                </a>
+            </div>
+            <!-- Facebook -->
+            <div class="flex flex-col md:flex-row md:items-center md:gap-2 mb-2 md:mb-0">
+                <h2 class="flex items-center justify-center mb-1 md:mb-0">
+                    <i class="fab fa-facebook-square mr-2 text-blue-800"></i>Facebook:
+                </h2>
+                <a href="https://web.facebook.com/search/top/?q=Danny%20yhung" class="hover:text-black hover:bg-blue-500 px-2 py-1 rounded transition md:ml-2">
+                    Danny Yhung
+                </a>
+            </div>
+            <!-- TikTok -->
+            <div class="flex flex-col md:flex-row md:items-center md:gap-2 mb-2 md:mb-0">
+                <h2 class="flex items-center justify-center mb-1 md:mb-0">
+                    <i class="fab fa-tiktok mr-2 text-black"></i>Tiktok:
+                </h2>
+                <a href="https://www.tiktok.com/search?q=Dannyyhung0&t=1746203245594" class="hover:bg-black hover:text-white px-2 py-1 rounded transition md:ml-2">
+                    Dannyyhung0
+                </a>
+            </div>
+            <!-- Instagram -->
+            <div class="flex flex-col md:flex-row md:items-center md:gap-2">
+                <h2 class="flex items-center justify-center mb-1 md:mb-0">
+                    <i class="fab fa-instagram mr-2 text-pink-500"></i>Instagram:
+                </h2>
+                <a href="https://www.instagram.com/danny__yhung/" class="hover:bg-purple-500 hover:text-white px-2 py-1 rounded transition md:ml-2">
+                    danny__yhung
+                </a>
+            </div>
         </div>
-        <nav class="flex flex-row flex-wrap">
-            <a href="https://Wa.link/8p6l05" class="hover:bg-green-500 hover:text-black mr-[230px] ml-[90px]">
-                08074931478
-            </a>      
-            <a href="https://web.facebook.com/search/top/?q=Danny%20yhung" class="mr-[230px] hover:text-black hover:bg-blue-500">
-                Danny Yhung
-            </a>    
-            <a href="https://www.tiktok.com/search?q=Dannyyhung0&t=1746203245594" class="mr-[230px] hover:bg-black">
-                Dannyyhung0
-            </a>
-            <a href="https://www.instagram.com/danny__yhung/" class="hover:bg-puple-500 hover:text-white">
-                danny__yhung
-            </a>
-        </nav>    
-    </footer> 
+    </footer>
 </body>
 </html>
